@@ -1,0 +1,112 @@
+.rodape {
+    background-color: #1a233b;
+    padding: 40px 20px 20px;
+    margin-top: 40px;
+    color: #fff;
+}
+
+.rodape-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.secao-rodape {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    color: #4A90E2;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.logo-footer img {
+    height: 50px;
+    margin-right: 8px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.secao-sobre p, .secao-contato p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.secao-sobre p {
+    width: 70%;
+}
+
+.secao-links ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.secao-links li {
+    margin-bottom: 10px;
+}
+
+.secao-links a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.secao-links a:hover {
+    color: #ffd000;
+}
+
+.secao-links a:hover .icone-seta img {
+    transform: rotate(42deg);
+}
+
+.icone-seta {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.icone-seta img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.rodape-inferior {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.rodape-inferior p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.logo-sesi-senai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-sesi-senai img {
+    width: 200px;
+    height: auto;
+    border-radius: 2px;
+    margin-top: 10px;
+}

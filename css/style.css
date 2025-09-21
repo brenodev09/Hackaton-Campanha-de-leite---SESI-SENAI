@@ -66,13 +66,13 @@
             color: #4D95F4;
         }
 
-        hr{
+        hr {
             width: 2.6rem;
-            border: #557FF4 solid 1.2px ;
+            border: #557FF4 solid 1.2px;
         }
     }
 
-    
+
 }
 
 html,
@@ -159,29 +159,29 @@ body {
     }
 }
 
-.content-pqDoar{
+.content-pqDoar {
     display: flex;
     flex-direction: column;
     gap: rem;
     align-items: center;
 }
 
-.text-pqDoar{
+.text-pqDoar {
     display: flex;
     flex-direction: column;
-    gap:rem;
+    gap: rem;
     /* text-align: center; */
     /* justify-content: center; */
     align-items: center;
 
-    h1{
+    h1 {
         width: 40rem;
         text-align: center;
         font-size: 4rem;
         margin-bottom: 1rem;
     }
 
-    p{
+    p {
         /* width: 41.5rem; */
         /* flex-wrap: wrap; */
         /* margin-left: 17rem; */
@@ -192,18 +192,18 @@ body {
     }
 }
 
-.cards-pqDoar{
+.cards-pqDoar {
     display: grid;
-    grid-template-columns: repeat( 2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.3rem;
     margin-top: 2rem;
- justify-content: center;
- align-items: center;
- /* max-width: 900px; */
+    justify-content: center;
+    align-items: center;
+    /* max-width: 900px; */
 }
-    
 
-.card{
+
+.card {
     display: flex;
     flex-direction: column;
     padding: 1.3rem;
@@ -213,20 +213,143 @@ body {
     width: 23rem;
     height: 100%;
 
-    p{
+    p {
         opacity: 63%;
-        font-size:0.95rem;
+        font-size: 0.95rem;
     }
 
-    .titulo-cardPqdoar{
+    .titulo-cardPqdoar {
         display: flex;
         gap: 0.5rem;
         align-items: center;
 
-        h1{
+        h1 {
             color: #FF8800;
             font-size: 1.3rem;
         }
     }
 }
 
+/* fim seção pq doar  */
+
+
+
+/* Inicio mascote */
+.container-mascote {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 8rem;
+}
+
+.text-title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    p {
+        text-align: center;
+        max-width: 46.5rem;
+        opacity: 70%;
+        font-size: 1.1rem;
+    }
+}
+
+.content-mascote {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.mascote {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: center;
+
+    .gif-mascote {
+        width: 25rem;
+        margin-top: -3rem;
+    }
+}
+
+.balao-pensamento {
+    width: 25rem;
+    height: 10rem;
+    background: url("/img/balão de pensamento.svg") no-repeat center/contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    /* espaço interno pro texto não colar na borda */
+    margin-left: 12rem;
+
+    p {
+        font-size: 0.9rem;
+        opacity: 80%;
+    }
+}
+
+.sobre-mascote {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 8rem;
+}
+
+.fala {
+    background: url("/img/balão de fala.svg") no-repeat center/contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;    width: 28rem;
+
+    /* height: 20rem;  */
+    p {
+        max-width: 35rem;
+        font-size: 0.9rem;
+        font-style: italic;
+        color: white;
+    }
+
+    span{
+        color:#8AB1FF;
+    }
+}
+
+.card-sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    background-color: #D0E0FF;
+    padding: 1.7rem;
+    border-radius: 0.7rem;
+    width: 35rem;
+
+    h1{
+        color: #6899FF;
+        font-size: 2.3rem;
+    }
+    span{
+        color: #529DFF;
+        font-size: 1.1rem;
+        font-weight: bolder;
+           font-family: "Poppins", sans-serif;
+    
+        
+    }
+
+    p{
+        font-size: 1rem;
+        opacity: 90%;
+    }
+}

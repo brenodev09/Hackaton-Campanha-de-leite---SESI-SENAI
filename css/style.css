@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
+    overflow-x: hidden;
     h1 {
         font-family: "Fredoka", sans-serif;
         font-optical-sizing: auto;
@@ -351,5 +351,219 @@ body {
     p{
         font-size: 1rem;
         opacity: 90%;
+    }
+}
+/* fim seção mascote */
+
+
+/* inicio seção frases */
+.frases{
+    display: flex;
+    gap: 1rem;
+    margin-top: 9rem;
+    width: max-content;
+    animation: rolagem 28s infinite linear;
+
+    p{
+        font-size: 1.8rem;
+        font-weight: bolder;
+        opacity: 50%;
+    }
+}
+
+@keyframes rolagem {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-50%);
+    }
+}
+/* fim frases */
+
+
+
+/* inicio seção ranking */
+.container-ranking{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+
+
+    .background-ranking{
+        border-radius: 2rem;
+        position: absolute;
+        z-index: 0;
+          /* height: 60rem; */
+        
+    }
+}
+
+.txt-titulo{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    justify-content: center;
+    align-items: center;
+
+    .titulo-ranking{
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        margin-top: 2rem;
+
+        h1{
+            font-size: 3rem;
+        }
+
+        img{
+            width: 3rem;
+        }
+
+    }
+
+    p{
+        max-width: 51rem;
+        text-align: center;
+        font-size: 1.05rem;
+        opacity: 77%;
+    }
+}
+
+
+
+
+.estatisticas-ranking {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+
+    @media(max-width: 500px) {
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-right: 0.5rem;
+
+    }
+}
+
+.dado {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+
+        font-family: "Inter", sans-serif;
+        font-weight:900;
+        color: rgb(0, 0, 0);
+        font-size: 8vh;
+        text-align: center;
+        opacity: 78%;
+    }
+
+    p {
+        font-size: 1rem;
+        opacity: 80%;
+    }
+
+    /* .p1 {
+        margin-left: 40px;
+    }
+
+    .p2 {
+        margin-left: 20px;
+    }
+
+    .p3 {
+        margin-left: 40px;
+    } */
+}
+
+
+
+.cards-ranking{
+    position: relative;
+    z-index: 2;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+
+    .mascote-ranking{
+        width: 25rem;
+        animation: pulo 3s infinite ;
+    }
+
+}
+
+@keyframes pulo{
+ 0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5%);
+
+  }
+    }
+
+.grade-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-height: 22rem;
+    gap: 1rem;
+}
+.card-ranking{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0.9rem;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg,#F8E4BC,#FFD37C);
+    padding: 1.1rem;
+    border-radius: 0.8rem;
+    width: 17rem;
+    /* height: 23rem; */
+    text-align: center;
+
+
+    img{
+        width: 6rem;
+        height: 6rem;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    h1{
+        font-size: 1.85rem;
+        color:#0058C3;
+    }
+
+    p{
+        font-size: 0.9rem;
+        opacity: 70%;
+
+    }
+
+    .btn-card{
+        border: none;
+        border-radius: 10rem;
+        cursor: pointer;
+        width: 10rem;
+        padding: 0.75rem;
+        background: #0058C3;
+        color: white;
+        font-size: 1rem;
+        font-weight: 700;
     }
 }

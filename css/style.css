@@ -732,3 +732,125 @@ body {
     padding: 0.3rem;
     gap: 1.5rem;
 }
+
+
+/* inicio seção feedbacks */
+.container-feedbacks {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+
+}
+
+.titulo-feedbacks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    p {
+        max-width: 50rem;
+        text-align: center;
+        font-size: 0.95rem;
+        opacity: 80%;
+    }
+}
+
+
+.swiper {
+    width: 80%;
+    padding-bottom: 6rem;
+    height: rem;
+}
+
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+    border-radius: 0.8rem;
+    background: linear-gradient(180deg, #C5E5FF, #BEDCF8);
+
+    p {
+        max-width: 30rem;
+    }
+}
+
+.person-feedback {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+
+    img {
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+        border-radius: 50%;
+
+    }
+
+    .name-function {
+        /* display: flex;
+        flex-direction: column; */
+
+
+        p {
+            font-size: 1rem;
+        }
+
+        span {
+            font-family: "Poppins", sans-serif;
+            opacity: 70%;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    color: #3758f9;
+    border: 1px solid #f9fafb;
+    border-radius: 100%;
+    box-shadow: 0px 0px 20px 0px rgba(92, 115, 160, 0.2);
+}
+
+.swiper-button-prev::after {
+    /* content: '\  ' ; */
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.swiper-button-next::after {
+    /* content: '\f054'; */
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.swiper-button-prev {
+    left: 3px;
+}
+
+.swiper-button-next {
+    right: 3px;
+}
+
+.swiper-pagination.active {
+    background-color: #3758f9;
+}
+
+/* fim seção feedbacks */

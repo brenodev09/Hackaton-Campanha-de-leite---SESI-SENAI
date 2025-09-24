@@ -665,3 +665,70 @@ body {
 }
 
 /* fim seção dúvidas */
+
+
+
+/* inicio seção table rank */
+.container-tableRank{
+    margin-top: 10rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* .background-tableRank{
+        width: 100%;
+        border-radius: 3rem;
+        object-fit: cover;
+    } */
+}
+
+.grade-tabela{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    background-color: #3366B3;
+    padding: 2.5rem;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 28rem;
+}
+
+.turma{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 1.2rem;
+    background-color: #dadada;
+    width: 18rem;
+    border-radius: 1.4rem;
+    font-size: 1.05rem;
+   
+    .colocacao, p{
+        font-weight: bold;
+    }
+   
+    img{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    
+}
+
+.turma1{
+    background-color: #FFC43B;
+    padding: 0.3rem;
+    gap: 1.5rem;
+}
+
+.turma2{
+    background-color: #FFC43B;
+    padding: 0.3rem;
+    gap: 1.5rem;
+}
+
+.turma3{
+    background-color: #E47200;
+    padding: 0.3rem;
+    gap: 1.5rem;
+}

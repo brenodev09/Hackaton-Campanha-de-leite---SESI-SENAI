@@ -8,3 +8,6 @@ accordions.forEach (accordion => {
         resposta.classList.toggle('ativo')
     })
 })
+
+
+// dados das fileiras

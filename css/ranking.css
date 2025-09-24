@@ -206,7 +206,22 @@ body {
 
 .imgs-podios{
     display: flex;
+    /* align-items: center; */
+}
 
+.podio2{
+    width: 23rem;
+    height: 28em;
+}
+
+.podio1{
+    width: 20rem;
+    height: 32rem;
+}
+
+.podio3{
+    width: 20rem;
+    height: 26rem;
 }
 
 .mascostes {

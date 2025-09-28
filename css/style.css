@@ -201,9 +201,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.3rem;
     margin-top: 2rem;
-    justify-content: center;
-    align-items: center;
-    /* max-width: 900px; */
+    /* margin: 2rem auto 0 auto; */
 }
 
 
@@ -213,7 +211,7 @@ body {
     padding: 1.3rem;
     gap: 0.4rem;
     border-radius: 1rem;
-    background: #B7DAFF;
+    background: #dfecfa;
     width: 23rem;
     height: 100%;
 
@@ -228,7 +226,7 @@ body {
         align-items: center;
 
         h1 {
-            color: #FF8800;
+            color: #578af8;
             font-size: 1.3rem;
         }
     }
@@ -853,8 +851,9 @@ body {
 /* inicio seção como ajudar */
 .container-comoAjudar{
     margin-top: 8rem;
-
-
+    background: url('/img/background como ajudar.png') no-repeat center/contain;
+    width: 100%;
+    padding: 6rem;
 }
 
 .content-comoAjudar{
@@ -864,7 +863,7 @@ body {
     gap:1rem;
     position: relative;
     z-index: 2;
-    margin-top: 8rem;
+    /* margin-top: rem; */
 
     h1{
         font-size: 3.1rem;
@@ -892,7 +891,7 @@ hr{
     img{
         padding: 1.2rem;
         border-radius: 50%;
-        background-color: rgb(228, 228, 228);
+        background-color: rgb(255, 255, 255);
     }
 
     .img-leite{

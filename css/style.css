@@ -25,7 +25,12 @@
         background-color: #D29E36;
         padding: 0.55rem;
         width: 12rem;
-        cursor: pointer;
+        cursor: pointer; 
+        transition: all 0.45s ease ;  
+        &:hover{
+            background:#b37803 ;
+            
+        }
 
 
         .content-btn {
@@ -45,12 +50,70 @@
             align-items: center;
             display: flex;
             justify-content: center;
+overflow: visible;
+}
 
-            img {
-                width: 0.78rem;
-                height: 0.78rem;
-            }
-        }
+.seta img {
+  width: 0.78rem;
+  height: 0.78rem;
+  display: block;
+  /* sem transition here — a animação faz tudo */
+}
+
+/* --- animações ativas apenas enquanto :hover --- */
+/* seta pra cima */
+.btn-global:hover .seta--up img {
+  animation: slideOutIn-up 1.0s ease-in-out infinite;
+}
+
+/* seta pra direita */
+.btn-global:hover .seta--right img {
+  animation: slideOutIn-right 1.0s ease-in-out infinite;
+}
+
+/* seta pra baixo */
+.btn-global:hover .seta--down img {
+  animation: slideOutIn-down 1.0s ease-in-out infinite;
+}
+
+/* seta pra esquerda */
+.btn-global:hover .seta--left img {
+  animation: slideOutIn-left 1.0s ease-in-out infinite;
+}
+
+/* --- keyframes --- */
+/* movimento pra cima (sai pra cima, fica escondida, volta) */
+@keyframes slideOutIn-up {
+  0%   { opacity: 1; transform: translateY(0); }
+  25%  { opacity: 0; transform: translateY(-14px); } /* some pra cima */
+  60%  { opacity: 0; transform: translateY(-14px); } /* fica escondida */
+  100% { opacity: 1; transform: translateY(0); }     /* volta */
+}
+
+/* pra direita */
+@keyframes slideOutIn-right {
+  0%   { opacity: 1; transform: translateX(0); }
+  25%  { opacity: 0; transform: translateX(14px); }
+  60%  { opacity: 0; transform: translateX(14px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* pra baixo */
+@keyframes slideOutIn-down {
+  0%   { opacity: 1; transform: translateY(0); }
+  25%  { opacity: 0; transform: translateY(14px); }
+  60%  { opacity: 0; transform: translateY(14px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* pra esquerda */
+@keyframes slideOutIn-left {
+  0%   { opacity: 1; transform: translateX(0); }
+  25%  { opacity: 0; transform: translateX(-14px); }
+  60%  { opacity: 0; transform: translateX(-14px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
     }
 
     .subtitulo {
@@ -59,6 +122,13 @@
         justify-content: center;
         width: 100%;
         gap: 1rem;
+        @media(max-width: 440px){
+            width: 50%;
+        }
+        
+        @media(max-width: 430px){
+            width: 60%;
+        }
 
         .txt-subtitulo {
             font-family: "Fuzzy Bubbles", sans-serif;
@@ -69,7 +139,13 @@
         hr {
             width: 2.6rem;
             border: #557FF4 solid 1.2px;
+              @media(max-width: 440px){
+                width: 2.5rem;
         }
+        }
+
+       
+
     }
 
 
@@ -83,7 +159,7 @@ body {
 
 /* inicio Hero section */
 .container-heroSection {
-    height: 49vh;
+    height: 46.5vh;
     position: relative;
     z-index: 2;
     overflow-y: hidden;
@@ -146,21 +222,50 @@ body {
 .container-pqDoar {
     margin-top: 5rem;
     display: flex;
-    gap: 3rem;
+    gap: 6rem;
     justify-content: center;
+     @media(max-width: 1178px){
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .imagens-pqDoar {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    
+      @media(max-width: 1168px){
+            display: flex;
+            flex-direction: initial;
+        }
+
+           @media(max-width: 435px){
+               gap: 0.5rem;
+        }
 
     img {
         width: 20rem;
         height: 20rem;
         object-fit: cover;
         border-radius: 100%;
+
+        @media(max-width: 675px){
+                width: 17rem;
+                height: 17rem;
+        }
+
+        @media(max-width: 490px){
+                width: 13rem;
+                height: 13rem;
+        }
+
+        @media(max-width: 435px){
+                width: 10rem;
+                height: 10rem;
+        }
     }
+
 }
 
 .content-pqDoar {
@@ -173,7 +278,7 @@ body {
 .text-pqDoar {
     display: flex;
     flex-direction: column;
-    gap: rem;
+    /* gap: rem; */
     /* text-align: center; */
     /* justify-content: center; */
     align-items: center;
@@ -183,16 +288,45 @@ body {
         text-align: center;
         font-size: 4rem;
         margin-bottom: 1rem;
+         @media(max-width: 573px){
+            font-size: 2.4rem;
+            width: 30rem;
+        }
+
+         @media(max-width: 430px){
+            font-size: 2.2rem;
+            width:25rem;
+        }
+
+         @media(max-width: 390px){
+            font-size: 2.1rem;
+            width:20rem;
+        }
+
     }
 
     p {
-        /* width: 41.5rem; */
-        /* flex-wrap: wrap; */
-        /* margin-left: 17rem; */
-        /* align-items: center; */
-        /* text-align: center; */
         max-width: 47.5rem;
-        /* margin-top: 1rem; */
+
+         @media(max-width: 768px){
+            max-width: 42rem;
+        }
+
+         @media(max-width: 650px){
+            max-width: 35rem;
+        }
+        
+        
+         @media(max-width: 575px){
+            max-width: 28rem;
+        }
+        
+         @media(max-width: 440px){
+            width: 19rem;
+        }
+        
+        
+      
     }
 }
 
@@ -201,7 +335,10 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.3rem;
     margin-top: 2rem;
-    /* margin: 2rem auto 0 auto; */
+
+    @media(max-width: 713px){
+        grid-template-columns: repeat(1,2fr);
+    }
 }
 
 
@@ -241,7 +378,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-top: 15rem;
+    margin-top: 5rem;
 }
 
 .text-title {
@@ -304,23 +441,25 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-top: 8rem;
+    margin-top: 10rem;
 }
 
 .fala {
     background: url("/img/balão de fala.svg") no-repeat center/contain;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
     align-items: center;
     text-align: center;
-    padding: 3rem;    width: 28rem;
+    padding: 3rem;   
+     width: 28rem;
 
     /* height: 20rem;  */
     p {
-        max-width: 35rem;
+        max-width: 33rem;
         font-size: 0.9rem;
         font-style: italic;
         color: white;
+        margin-top: 1.2rem;
     }
 
     span{
@@ -392,13 +531,14 @@ body {
     display: flex;
     flex-direction: column;
      background-image: url("/img/fundo ranking pag Inicial.svg");
-    background-repeat: no-repeat;
+     background-repeat: no-repeat;
     background-size: cover;   /* cobre toda a seção */
-    background-position: center; /* centraliza */
+     background-position: center;  
     height: 60rem;
+            border-radius: 6rem;
+
 
     .background-ranking{
-        border-radius: 2rem;
         position: absolute;
         z-index: 0;
           /* height: 60rem; */
@@ -490,7 +630,7 @@ body {
     height: 520px;
 
     .mascote-ranking{
-        width: 25rem;
+        width: 20rem;
         animation: pulo 3s infinite ;
 
     }
@@ -557,6 +697,10 @@ body {
         color: white;
         font-size: 1rem;
         font-weight: 700;
+        transition: 0.4s ease;
+        &:hover{
+            background: #012d62;
+        }
     }
 }
 /* fim seção ranking */
@@ -850,10 +994,11 @@ body {
 
 /* inicio seção como ajudar */
 .container-comoAjudar{
-    margin-top: 8rem;
-    background: url('/img/background como ajudar.png') no-repeat center/contain;
-    width: 100%;
-    padding: 6rem;
+    margin-top: -8rem;
+    background: url('/img/background\ como\ ajudar.png') no-repeat center/contain;
+    height: 70rem;
+    /* width: 100%; */
+    /* padding: 5rem; */
 }
 
 .content-comoAjudar{
@@ -863,7 +1008,7 @@ body {
     gap:1rem;
     position: relative;
     z-index: 2;
-    /* margin-top: rem; */
+    margin-top:20rem;
 
     h1{
         font-size: 3.1rem;

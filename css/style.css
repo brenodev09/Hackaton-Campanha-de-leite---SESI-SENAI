@@ -227,10 +227,13 @@ body {
 
 /* inicio Hero section */
 .container-heroSection {
-    height: 46.5vh;
+    height: 42vh;
     position: relative;
     z-index: 2;
     overflow-y: hidden;
+    margin-top: 78px;
+    display: flex;
+    justify-content: center;
 }
 
 .content-hero {
@@ -252,10 +255,35 @@ body {
     align-self: center;
     gap: 0.5rem;
 
+    h1{
+        font-size: 2.5rem;
+        @media(max-width:612px){
+            font-size: 2.3rem;
+        }
+
+        @media(max-width:560px){
+            font-size: 2.1rem;
+        }
+
+        @media(max-width:514px){
+            font-size: 1.9rem;
+        }
+        @media(max-width:467px){
+            font-size: 1.7rem;
+        }
+        @media(max-width:427px){
+            font-size: 1.6rem;
+        }
+    }
+
     .descricao {
-        width: 35rem;
+        max-width: 35rem;
         text-align: center;
         opacity: 70%;
+
+          @media(max-width:490px){
+            font-size: 0.9rem;
+        }
     }
 
 
@@ -267,6 +295,9 @@ body {
 .mascote-hero {
     width: 21rem;
     margin-top: 5rem;
+    @media(max-width:1200px){
+        display: none;
+    }
     /* rotate: -12deg; */
     /* transform: rotateY(180deg); */
 }
@@ -304,7 +335,7 @@ body {
     flex-direction: column;
     gap: 2rem;
 
-    @media(max-width: 1168px) {
+    @media(max-width: 1200px) {
         display: flex;
         flex-direction: initial;
     }
@@ -318,6 +349,11 @@ body {
         height: 20rem;
         object-fit: cover;
         border-radius: 100%;
+
+        @media(max-width: 1140px) {
+            width: 19rem;
+            height: 19rem;
+        }
 
         @media(max-width: 675px) {
             width: 17rem;

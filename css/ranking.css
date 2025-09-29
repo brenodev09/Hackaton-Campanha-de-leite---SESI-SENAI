@@ -100,7 +100,7 @@ body {
     align-items: center;
     padding: 1.5rem;
     background-color: #45619B;
-    width: 63rem;
+    max-width: 63rem;
     margin: 10rem auto 0 auto;
     /* <-- centraliza horizontal */
     border-radius: 1.3rem;
@@ -115,6 +115,35 @@ body {
     flex-direction: column;
     gap: 0.5rem;
     width: 60rem;
+
+    @media(max-width:960px){
+        width: 55rem;
+    }
+
+    @media(max-width:870px){
+        width: 50rem;
+    }
+
+    @media(max-width:785px){
+        width: 45rem;
+    }
+
+
+    @media(max-width:714px){
+        width: 40rem;
+    }
+
+    @media(max-width:642px){
+        width: 35rem;
+    }
+
+    @media(max-width:540px){
+        width: 30rem;
+    }
+
+    @media(max-width:470px){
+        width: 26rem;
+    }
 }
 
 .conquista {

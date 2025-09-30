@@ -38,3 +38,44 @@ var swiper = new Swiper(".swiper", {
         }
     }
 });
+
+
+
+
+let jaRodou = false;
+
+function surgirNumeros() {
+  const elementos = document.querySelectorAll(".number-data");
+
+  elementos.forEach(el => {
+    let valorFinal = parseInt(el.getAttribute("valor"));
+    let valorAtual = 0;
+    let incremento = Math.ceil(valorFinal / 300); 
+    if (incremento < 1) incremento = 1; 
+    let sufixo = el.getAttribute("data-sufixo") || "";
+
+    let contador = setInterval(() => {
+      valorAtual += incremento;
+      if (valorAtual >= valorFinal) {
+        valorAtual = valorFinal;
+        clearInterval(contador);
+      }
+      el.textContent =   sufixo + valorAtual.toLocaleString("pt-BR") ;
+    }, 20);
+  });
+}
+
+window.addEventListener("scroll", () => {
+  if (jaRodou) return;
+
+  const alvo = document.querySelector(".number-data");
+  if (!alvo) return;
+
+  const rect = alvo.getBoundingClientRect();
+  const alturaTela = window.innerHeight;
+
+  if (rect.top >= 0 && rect.bottom <= alturaTela) {
+    surgirNumeros();
+    jaRodou = true;
+  }
+});

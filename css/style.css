@@ -351,23 +351,23 @@ body {
         border-radius: 100%;
 
         @media(max-width: 1140px) {
-            width: 19rem;
-            height: 19rem;
+            width: 18rem;
+            height: 18rem;
         }
 
         @media(max-width: 675px) {
-            width: 17rem;
-            height: 17rem;
+            width: 14rem;
+            height: 14rem;
         }
 
         @media(max-width: 490px) {
-            width: 13rem;
-            height: 13rem;
+            width: 12rem;
+            height: 12rem;
         }
 
         @media(max-width: 435px) {
-            width: 10rem;
-            height: 10rem;
+            width: 9rem;
+            height: 9rem;
         }
     }
 
@@ -1480,6 +1480,11 @@ body {
     gap: 1rem;
     margin-top: 8rem;
 
+      @media(max-width:1240px) {
+        gap: 3rem;
+
+    }
+
     h1 {
         font-size: 3.1rem;
 
@@ -1502,7 +1507,7 @@ body {
     }
 
     @media(max-width:1160px) {
-        margin-top: 14rem;
+        margin-top: 7rem;
     }
 }
 
@@ -1533,12 +1538,13 @@ body {
 
     @media(max-width:1240px) {
         flex-wrap: wrap;
+        gap: 3rem;
 
     }
 
     @media(max-width:650px) {
         flex-direction: column;
-        gap: 2.4rem;
+        gap: 3rem;
     }
 
 

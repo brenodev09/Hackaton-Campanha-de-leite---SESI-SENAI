@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mockup — Seção FAQ / Missões da Campanha</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --blue:#7fb3d5;
+      --blue-dark:#5b96c0;
+      --orange:#ff9b3d;
+      --glass-bg: rgba(255,255,255,0.72);
+      --card-shadow: 0 8px 30px rgba(2,6,23,0.12);
+      --radius:18px;
+      --container-max:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,"Helvetica Neue",Arial; background: linear-gradient(180deg,#f6f8fa 0%, #eef4f8 50%); color:#102027}
+
+    /* layout */
+    .wrap{max-width:var(--container-max);margin:40px auto;padding:24px}
+    .section{background: url('/img/cow-pattern.png') repeat; padding:28px;border-radius:14px;position:relative;overflow:visible}
+
+    /* card / glass */
+    .card{
+      display:grid;grid-template-columns: 1fr 420px;gap:28px;align-items:center;
+      background: linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.78));
+      border-radius:var(--radius);padding:28px;border:1px solid rgba(255,255,255,0.6);box-shadow:var(--card-shadow);
+      backdrop-filter: blur(6px) saturate(1.05);
+    }
+
+    /* texto */
+    .title{font-size:28px;font-weight:800;color:var(--orange);letter-spacing:0.6px;margin:0 0 8px}
+    .subtitle{font-weight:600;color:var(--blue-dark);margin:0 0 16px}
+    .bullets{margin:0;padding:0;list-style:none}
+    .bullets li{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-radius:10px;transition:transform .22s ease, background .22s ease}
+    .bullets li:hover{transform:translateX(6px);background:rgba(95,160,200,0.05)}
+    .icon-wrap{min-width:36px;height:36px;border-radius:9px;background:linear-gradient(180deg,#fff,#f3f7fb);display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(16,32,39,0.06)}
+    .bullet-text{line-height:1.45;color:#10323a}
+
+    /* CTA */
+    .cta-row{margin-top:18px;display:flex;gap:12px;align-items:center}
+    .btn{background:linear-gradient(90deg,var(--orange),#ff7f1f);border:none;padding:12px 18px;border-radius:12px;color:white;font-weight:700;cursor:pointer;box-shadow:0 8px 20px rgba(255,138,70,0.18);transition:transform .15s ease}
+    .btn:active{transform:scale(.98)}
+    .btn.secondary{background:transparent;color:var(--blue-dark);border:2px solid rgba(91,150,192,0.14)}
+
+    /* mascot */
+    .mascot-wrap{display:flex;align-items:center;justify-content:center;position:relative}
+    .mascot{width:340px;max-width:86%;transform:translateY(6px);transition:transform .35s ease}
+    .mascot:hover{transform:translateY(-6px) rotate(-1deg)}
+
+    /* speech bubble behind FAQ */\    
+    .faq-bubble{position:absolute;right:28px;bottom:-34px;width:48%;height:120px;background:var(--blue);border-radius:40px;padding:14px 24px;display:flex;align-items:center;justify-content:center;box-shadow:0 20px 40px rgba(91,150,192,0.12);}
+    .faq-text{font-size:68px;font-weight:800;color:var(--orange);text-shadow:0 3px 0 rgba(0,0,0,0.04)}
+
+    /* micro-animations */
+    .animate-fade{opacity:0;transform:translateY(6px);animation:fadeInUp .7s forwards;animation-delay:.18s}
+    .animate-stagger li{opacity:0;transform:translateY(8px);}
+    .animate-stagger li:nth-child(1){animation:fadeInUp .6s forwards .22s}
+    .animate-stagger li:nth-child(2){animation:fadeInUp .6s forwards .32s}
+    .animate-stagger li:nth-child(3){animation:fadeInUp .6s forwards .42s}
+
+    @keyframes fadeInUp{to{opacity:1;transform:none}}
+
+    /* responsive */
+    @media (max-width:920px){
+      .card{grid-template-columns:1fr;gap:18px}
+      .faq-bubble{position:static;width:100%;height:100px;border-radius:20px;margin-top:6px}
+      .mascot{max-width:240px}
+    }
+
+    @media (max-width:480px){
+      .wrap{padding:12px;margin:20px auto}
+      .title{font-size:20px}
+      .faq-text{font-size:48px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="section">
+      <div class="card" role="region" aria-labelledby="campanha-title">
+        <div>
+          <h2 id="campanha-title" class="title">MISSÕES DA CAMPANHA</h2>
+          <p class="subtitle">Unir a comunidade escolar para ajudar quem precisa — com empatia e ação.</p>
+
+          <ul class="bullets animate-stagger animate-fade" aria-label="missões">
+            <li>
+              <div class="icon-wrap" aria-hidden>
+                <!-- icon: hands -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C9.8 2 8 3.8 8 6v4H6v6h12v-6h-2V6c0-2.2-1.8-4-4-4z" fill="#ff9b3d"/></svg>
+              </div>
+              <div class="bullet-text">Incentivar a comunidade escolar do <strong>SESI Jaboticabal</strong> a doar e apoiar o próximo.</div>
+            </li>
+
+            <li>
+              <div class="icon-wrap" aria-hidden>
+                <!-- icon: network -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="6" r="2" fill="#7fb3d5"/><path d="M4 20c1.5-3 4-5 8-5s6.5 2 8 5" stroke="#7fb3d5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="bullet-text">Fortalecer redes de solidariedade na cidade, conectando doadores, escolas e instituições.</div>
+            </li>
+
+            <li>
+              <div class="icon-wrap" aria-hidden>
+                <!-- icon: heart -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21s-7-4.6-9-7.2C-1 9.5 4 4 8 6c2.2 1.3 4 3.4 4 3.4S12.8 7.3 15 6c4-2 9 3.5 5 7.8C19 16.4 12 21 12 21z" fill="#ff9b3d"/></svg>
+              </div>
+              <div class="bullet-text">Contribuir para o bem-estar de instituições que atendem crianças, famílias e pacientes em vulnerabilidade social.</div>
+            </li>
+          </ul>
+
+          <div class="cta-row">
+            <button class="btn" onclick="openForm()" aria-label="Quero ajudar">Quero Ajudar 🥛</button>
+            <button class="btn secondary" onclick="share()">Compartilhar</button>
+          </div>
+        </div>
+
+        <div class="mascot-wrap" aria-hidden>
+          <!-- Substitua o src abaixo pela sua imagem PNG com fundo transparente da mascote -->
+          <img class="mascot" id="mascotImg" src="/img/Mascote/vaca corpo apontando 3.svg" alt="Mascote vaquinha sorrindo" />
+        </div>
+
+      </div>
+
+      <!-- FAQ bubble grande (estético) -->
+      <div class="faq-bubble" aria-hidden>
+        <div class="faq-text">FAQ</div>
+      </div>
+
+    </section>
+  </main>
+
+  <script>
+    // Pequenas funções JS para demo (substitua com suas ações reais)
+    function openForm(){
+      window.alert('Abrir formulário de doação (substitua aqui com redirecionamento ou modal).')
+    }
+    function share(){
+      if(navigator.share){
+        navigator.share({title:'Campanha de Leite',text:'Ajude a campanha de doação de leite do SESI Jaboticabal',url:location.href})
+          .catch(()=>{});
+      }else{
+        window.prompt('Copie o link para compartilhar:', location.href);
+      }
+    }
+
+    // animação de entrada ao scroll
+    document.addEventListener('DOMContentLoaded',()=>{
+      const els = document.querySelectorAll('.animate-fade');
+      function reveal(){
+        els.forEach(el=>{
+          const r = el.getBoundingClientRect();
+          if(r.top < window.innerHeight - 60) el.style.animationPlayState='running';
+        })
+      }
+      window.addEventListener('scroll', reveal); reveal();
+    });
+  </script>
+</body>
+</html>

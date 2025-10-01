@@ -1,4 +1,42 @@
 
+const btnMenu = document.getElementById('btn-menu')
+const btnClose = document.getElementById('btn-close')
+const menu = document.getElementById('menu')
+
+btnMenu.addEventListener('click', ()=>{
+    menu.classList.add('open')
+    
+})
+
+btnClose.addEventListener('click', ()=>{
+    menu.classList.remove('open')
+
+})
+
+
+
+
+const frases = ["Doe leite, espalhe esperança!", "Esperança no copo 🌟", "Nutrir é amar 💙", "Juntos vamos nutrir o futuro! 💙"];
+
+    let posicao = 0;
+    const elemento = document.getElementById("frase");
+
+    setInterval(() => {
+      
+      posicao = (posicao + 1) % frases.length;
+
+      elemento.style.opacity = 0;
+
+      setTimeout(() => {
+        elemento.textContent = frases[posicao]; 
+        elemento.style.opacity = 1;
+      }, 500);
+
+}, 2000); 
+
+
+
+
 // script dos accordions - seçao de duvidas
 const accordions = document.querySelectorAll('.accordion')
 

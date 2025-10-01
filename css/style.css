@@ -567,8 +567,10 @@ body {
     margin-left: 12rem;
 
     p {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
         opacity: 80%;
+        margin-top: -0.9rem;
+         transition: opacity 0.5s ease, transform 0.5s ease;
 
         @media(max-width:499px) {
             font-size: 0.83rem;

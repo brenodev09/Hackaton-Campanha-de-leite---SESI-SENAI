@@ -89,6 +89,37 @@ body {
     background: linear-gradient(90deg, #F9F9F9, #ECF7FF);
 }
 
+.container-objetivo{
+    margin-top: 10rem;
+    background: url("/img/background\ sec.\ table\ rank.svg") no-repeat center/cover;
+    padding: 3rem;
+    h1{
+        font-size: 3rem;text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .topics{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+
+        
+    }
+
+    li{
+                font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+    }
+
+    span{
+        font-size: 1.1rem;
+        color: #0042B3;
+        font-weight: bolder;
+    }
+}
+
 
 /* inicio metas */
 .container-metas {

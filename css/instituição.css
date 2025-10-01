@@ -13,7 +13,7 @@
 .cabecalho {
     position: relative;
     text-align: center;
-    background-image: url('/Imagens/fundo intituição.jpg');
+    background-image: url('/img/fundo intituição.jpg');
     background-size: cover;
     background-position: center;
     padding: 60px 40px;
@@ -164,7 +164,7 @@
 .icon-avaliacao {
     width: 30px;
     height: auto;
-    margin-left: 280px;
+    margin-left: 290px;
     margin-top: -10px;
 }
 
@@ -183,7 +183,6 @@
     color: #333;
     margin-bottom: 5px;
     font-weight: bold;
-    margin-left: -300px;
     margin-top: -40px;
 }
 
@@ -327,7 +326,7 @@
 }
 
 .contato-email:hover {
-    background-color: #ffba3958;
+    background-color: #FFA500;
     color: #fff;
 }
 
@@ -488,344 +487,336 @@
     line-height: 1.4;
 }
 
-
-
-@media (max-width: 768px) {
-    .cartoes-resumo {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cartoes-resumo .cartao {
-   
-        width: 85%;
-        border: none;
-       
-        margin-bottom: 20px;
-    }
-
-    .cartoes-resumo p {
-        font-size: 1.2em;
-    }
-
-    .item-instituto {
-        flex-direction: column;
-        width: 500px;
-    }
-
-    .item-instituto .card-mapa {
-        width: 100%;
-        min-width: unset;
-        height: 200px;
-    }
-
-    .item-instituto .card-mapa img {
-        border-radius: 10px 10px 0 0;
-    }
-
-    .informacoes {
-        flex-direction: column;
-        gap: 20px;
-
-    }
-
-    .informacoes h3 {
-        font-size: 1.2em;
-        width: 480px;
-
-    }
-
-    .endereco,
-    .descricao,
-    .horario p {
-        width: 480px;
-        font-size: 1em;
-    }
-
-    .item-instituto .informacoes {
-        padding: 15px;
-    }
-
-    
-    .item-instituto .avaliacao {
-        flex-direction: column;
-        gap: 15px;
-        width: 700px;
-        margin-left: 20%;
-    }
-
-   
-    .item-instituto .acoes {
-        display: flex;
-        gap: 10px;
-        width: 200px;
-        margin-left: 36%;
-    }
-
-    .item-instituto .contato-instituicao {
-        width: 100%;
-    }
+.instituicoes {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin-top: 60px;
 }
 
-@media (max-width: 600px) {
-    .cartoes-resumo {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cartoes-resumo .cartao {
-        width: 90%;
-        border: none;
-        margin-bottom: 20px;
-    }
-
-    .cartoes-resumo p {
-        font-size: 1.2em;
-    }
-
-    .item-instituto {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .item-instituto .card-mapa {
-        width: 100%;
-        min-width: unset;
-        height: 200px;
-    }
-
-    .item-instituto .card-mapa img {
-        border-radius: 10px 10px 0 0;
-    }
-
-    .informacoes {
-        flex-direction: column;
-        gap: 20px;
-        width: 100%;
-    }
-
-    .informacoes h3 {
-        font-size: 1.2em;
-        width: 400px;
-    }
-
-    .endereco,
-    .descricao,
-    .horario p {
-        width: 420px;
-        font-size: 1em;
-    }
-
-    .item-instituto .informacoes {
-        padding: 30px;
-    }
-
-    .item-instituto .avaliacao {
-        flex-direction: column;
-        gap: 15px;
-        width: 700px;
-        margin-left: 10%;
-    }
-
-    .item-instituto .acoes {
-        display: flex;
-        gap: 10px;
-        width: 150px;
-        margin-left: 0;
-        margin-left: 40%;
-    }
-
-    .item-instituto .contato-instituicao {
-        width: 100%;
-    }
+.cabecalho {
+    position: relative;
+    text-align: center;
+    background-image: url('/img/fundo intituição.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
 }
 
-@media (max-width: 542px) {
-    .cartoes-resumo {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cartoes-resumo .cartao {
-        width: 90%;
-        border: none;
-        margin-bottom: 20px;
-    }
-
-    .cartoes-resumo p {
-        font-size: 1.3em;
-    }
-
-    .item-instituto {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .item-instituto .card-mapa {
-        width: 100%;
-        min-width: unset;
-        height: 200px;
-    }
-
-    .item-instituto .card-mapa img {
-        border-radius: 10px 10px 0 0;
-    }
-
-    .informacoes {
-        flex-direction: column;
-        gap: 20px;
-        width: 100%;
-    }
-
-    .informacoes h3 {
-        font-size: 1.1em;
-        width: 380px;
-    }
-
-    .endereco,
-    .descricao,
-    .horario p {
-        width: 380px;
-        font-size: 0.9em;
-    }
-
-    .item-instituto .informacoes {
-        padding: 30px;
-    }
-
-    .item-instituto .avaliacao {
-        flex-direction: column;
-        gap: 15px;
-        width: 700px;
-        margin-left: 0;
-    }
-
-    .item-instituto .acoes {
-        display: flex;
-        gap: 10px;
-        width: 150px;
-
-    }
-
-    .item-instituto .contato-instituicao {
-        width: 100%;
-    }
+.cabecalho .logo img {
+    width: 320px;
+    object-fit: cover;
+    margin-bottom: -50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: auto;
 }
 
-@media (max-width: 490px) {
-    .cartoes-resumo {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cartoes-resumo .cartao {
-        width: 90%;
-        border: none;
-        margin-bottom: 20px;
-    }
-
-    .cartoes-resumo p {
-        font-size: 1.1em;
-    }
-
-    .item-instituto {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .item-instituto .card-mapa {
-        width: 100%;
-        min-width: unset;
-        height: 200px;
-    }
-
-    .item-instituto .card-mapa img {
-        border-radius: 10px 10px 0 0;
-    }
-
-    .informacoes {
-        flex-direction: column;
-        gap: 20px;
-        width: 100%;
-    }
-
-    .informacoes h3 {
-        font-size: 1.2em;
-        width: 300px;
-    }
-
-    .endereco,
-    .descricao,
-    .horario p {
-        width: 330px;
-        font-size: 1.2em;
-    }
-
-    .item-instituto .informacoes {
-        padding: 30px;
-    }
-
-    .item-instituto .avaliacao {
-        flex-direction: column;
-        gap: 15px;
-        width: 680px;
-        margin-left: -10%;
-    }
-
-
-    .item-instituto .acoes {
-        display: flex;
-        gap: 10px;
-        width: 150px;
-        margin-left: 20%;
-
-    }
-
-    .item-instituto .contato-instituicao {
-        width: 100%;
-    }
+.cabecalho h2 {
+    font-size: 2.5em;
+    color: #000000;
+    margin: 0;
 }
 
-@media (max-width: 490px) {
-    .item-avaliacao {
-        width: 300px;
-    }
-
-    .icon-avaliacao {
-        margin-left: 240px;
-    }
-
-    .icon-necessidade {
-        margin-left: 240px;
-    }
-
-    .item-instituto .acoes {
-        display: flex;
-        gap: 10px;
-        width: 100px;
-        margin-left: 30px;
-    }
+.bene {
+    color: #074389;
 }
 
-@media (max-width: 490px) {
+.cabecalho p {
+    font-size: 1.2em;
+    color: #000000;
+    max-width: 600px;
+    margin: 10px auto;
+}
 
-    .endereco,
-    .descricao,
-    .horario p {
-        width: 280px;
-        font-size: 1em;
-    }
+.cartoes-resumo {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.cartoes-resumo .cartao {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.cartoes-resumo .icone {
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+}
+
+.cartoes-resumo .icone img {
+    width: 100px;
+    margin-bottom: 0;
+}
+
+.cartoes-resumo .cartao:hover {
+    transform: translateY(-5px);
+}
+
+.cartoes-resumo .valor {
+    font-size: 2em;
+    font-weight: bold;
+    color: #004d99;
+}
+
+.cartoes-resumo p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+.instituto {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+    width: 80%;
+    margin-left: auto;
+    /* Centralizado, melhor do que um valor fixo */
+    margin-right: auto;
+}
+
+.item-instituto {
+    display: flex;
+    position: relative;
+    /* Necessário para posicionar o pseudo-elemento */
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: auto;
+}
+
+.item-instituto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/fundo intituição.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    /* Aplica a opacidade apenas à imagem de fundo */
+    z-index: 0;
 
 }
 
+.item-instituto .imgagem-instituto {
+    width: 30%;
+    z-index: 1;
+    height: 100%;
+}
 
-.navmenu {
+.item-instituto .imgagem-instituto img {
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+.informacoes {
+    padding: 20px;
+    width: 60%;
+    z-index: 1;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.item-instituto .informacoes {
+    padding: 20px;
+    width: 60%;
+    z-index: 1;
+}
+
+.informacoes h3 {
+    color: #004d99;
+    font-size: 1.3em;
+    margin-top: 0;
+    z-index: 1;
+}
+
+.informacoes .endereco,
+.informacoes .horario {
+    color: #888;
+    font-size: 0.9em;
+    z-index: 1;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.informacoes .descricao {
+    color: #555;
+    margin: 15px 0;
+    z-index: 1;
+}
+
+.avaliacao {
     display: flex;
     gap: 20px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.item-avaliacao {
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    z-index: 1;
+}
+
+/* Card 1: Pessoas Atendidas (Gradiente Azul Suave) */
+.avaliacao .item-avaliacao:nth-child(1) {
+    background: linear-gradient(10deg, #50c1f5a2 0%, #ffffff 100%);
+    background-color: #e6f7ff;
+    border: 1px solid #b3e0ff;
+}
+
+/* Card 2: Necessidade Mensal (Gradiente Laranja Suave) */
+.avaliacao .item-avaliacao:nth-child(2) {
+    background: linear-gradient(5deg, #ffa60085 0%, #ffffff 100%);
+    background-color: #fff0e6;
+    border: 1px solid #ffd9b3;
+}
+
+.item-avaliacao .rotulo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.item-avaliacao .valor {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #004d99;
+    margin: 5px 0;
+}
+
+.item-avaliacao .nota {
+    display: block;
+    font-size: 0.7em;
+    color: #888;
+    font-style: italic;
+}
+
+.acoes {
+    display: flex;
+    gap: 10px;
+}
+
+.contato-instituicao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contato-instituicao:hover {
+    background-color: #007bff;
+    color: #fff;
 }
 
 
+@media (max-width: 1200px) {
+    .instituto {
+        width: 95%;
+    }
+}
+
+@media (max-width: 950px) {
+    .item-instituto .card-mapa {
+        width: 40%;
+    }
+
+    .item-instituto .informacoes {
+        width: 55%;
+    }
+}
+
 @media (max-width: 830px) {
+    .cabecalho {
+        padding: 40px 20px;
+    }
+
+    .cartoes-resumo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cartoes-resumo .cartao {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .instituto {
+        width: 90%;
+    }
+
+    .item-instituto {
+        flex-direction: column;
+    }
+
+    .item-instituto .card-mapa {
+        width: 100%;
+        height: 200px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .item-instituto .card-mapa img {
+        border-radius: 20px 20px 0 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .item-instituto .informacoes {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .avaliacao {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .item-avaliacao {
+        width: 100%; 
+    }
+    
+    
     .btnmenu {
         display: block;
     }
@@ -838,36 +829,77 @@
         width: 40%;
         height: 100vh;
         flex-direction: column;
-        background: rgb(191, 212, 234);
-        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
         padding: 20px;
-        z-index: 2;
-    }
-    
- .brand{
-        flex: 1;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        padding-right: 2rem;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        z-index: 999;
     }
 
-    .btn-close{
-        display: flex;
-        align-self: flex-end;
-         background: transparent;
-            border: none;
-        img{
-           
-            width: 1.5rem;
-            height: 1.5rem;
-        }
+    .nav-item {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
     }
 
     .navmenu.open {
         display: flex;
-
     }
 
+    .brand{
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .cabecalho h2 {
+        font-size: 2em;
+    }
+
+    .cabecalho p {
+        font-size: 1em;
+    }
+
+    .cartoes-resumo .cartao {
+        width: 90%;
+    }
+
+    .instituto {
+        width: 95%;
+    }
+
+    .item-instituto .acoes {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .item-instituto .contato-instituicao {
+        width: 100%;
+    }
+}
+
+@media (max-width: 490px) {
    
+
+    .item-avaliacao {
+        width: 100%; 
+    }
+
+
+
+    .item-instituto .acoes {
+        display: flex;
+        gap: 10px;
+        width: 100%; 
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .endereco,
+    .descricao,
+    .horario p {
+        
+        width: auto; 
+        font-size: 1em;
+    }
+
 }

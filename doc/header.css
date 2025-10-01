@@ -18,14 +18,13 @@
     position: fixed;
 }
 
-.content-header{
-     /* max-width: ; */
-    /* margin: 0 auto; */
+/* .content-header{
+   
     padding: 12px 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+} */
 
 .logo {
     display: flex;

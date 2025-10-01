@@ -227,7 +227,7 @@ body {
 
 /* inicio Hero section */
 .container-heroSection {
-    height: 42vh;
+    height: 60vh;
     position: relative;
     z-index: 2;
     overflow-y: hidden;
@@ -294,7 +294,7 @@ body {
 
 .mascote-hero {
     width: 21rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
     @media(max-width:1200px){
         display: none;
     }

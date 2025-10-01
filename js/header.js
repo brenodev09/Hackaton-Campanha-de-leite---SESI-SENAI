@@ -1,18 +1,15 @@
+ // Lógica do menu hambúrguer para dispositivos móveis
+        document.getElementById('btnmenu').addEventListener('click', function() {
+            document.getElementById('navmenu').classList.add('open');
+        });
 
+        document.getElementById('btn-close').addEventListener('click', function() {
+            document.getElementById('navmenu').classList.remove('open');
+        });
 
-
-
-
-const btnMenu = document.getElementById('btn-menu')
-const btnClose = document.getElementById('btn-close')
-const menu = document.getElementById('menu')
-
-btnMenu.addEventListener('click', ()=>{
-    menu.classList.add('open')
-    
-})
-
-btnClose.addEventListener('click', ()=>{
-    menu.classList.remove('open')
-
-})
+        // Fechar ao clicar em um item de menu
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', function() {
+                document.getElementById('navmenu').classList.remove('open');
+            });
+        });
